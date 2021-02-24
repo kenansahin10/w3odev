@@ -9,36 +9,77 @@
         <link rel="stylesheet" href="">
     
         <style>
-        body{
+        body {
             background:#f8f7f7 ;
         }
+       
         #main {
-            width: 255px;
-            height: 300px;
-            margin: auto 0;
+            width:245px;
+            height:300px;
+            margin:0 auto;
         }
 
         #numbers {
             background:#ecf0f1;
-            width: 185px;
-            height: 200px;
+            width:185px;
+            height:235px;
+            float:left;
         }
 
-        #nummbers .num {
-            width: 50px;
-            height: 50px;
+        #numbers .num {
+            width:50px;
+            height:50px;
+            border:1px solid #000;
+            background: #ffffff;    
+            border-radius:4px;    
+            margin:4px;
+        }
+        
+        #operators {
+            background:#95a5o6;
+            width:60px;
+            height:235px;
+            float:right;
+        }
+
+        #operators .operator {
+            width:50px;
+            height:50px;
             border:1px solid #000;
             background: #ffffff;    
             border-radius: 4px;    
+            margin:4px;
+        }
+
+        #resultOperators {
+            background: #7f8c8d;
+        }
+
+        #resultOperators .resultOperator {
+            width:50px;
+            height:50px;
+            border:1px solid #000;
+            background: #ffffff;    
+            border-radius:4px;    
             margin: 4px;
         }
+
+        .clear {
+            clear: both;
+        }
+
+        
+
+
+
+
 
         </style>
     </head>
     <body>
-        <div id='main'>
+        <div id="main">
             <h1>Basic Calculator</h1>
-            <div id='result'>
+            <div id="result">
             </div>
         </div>
         <div id="numbers">
@@ -55,10 +96,12 @@
             <button id="dot" class="num">.</button>
         </div>
         <div id="operators">
-            <button value="+" class="num">+</button>
-            <button value="-" class="num">-</button>
-            <button value="*" class="num">*</button>
-            <button value="/" class="num">/</button>
+            <button value="+" class="operator">+</button>
+            <button value="-" class="operator">-</button>
+            <button value="*" class="operator">*</button>
+            <button value="/" class="operator">/</button>
+        </div>
+        <div class="clear">
         </div>
         <div id="resultOperators">
             <button class="resultOperator" id="equation">=</button>
